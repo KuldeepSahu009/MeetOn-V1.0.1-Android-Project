@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Kuldeep/@Rafale_Studio_2k-20/App_Studio/@Rafale_Studio_Apps/COMPLETE Projects/MeetOn V1.0.1/app/src/main/res/layout/activity_covied.xml" value="0.27445652173913043" />
+        <entry key="..\:/Kuldeep/@Rafale_Studio_2k-20/App_Studio/@Rafale_Studio_Apps/COMPLETE Projects/MeetOn V1.0.1/app/src/main/res/layout/activity_dashbord.xml" value="0.27445652173913043" />
+        <entry key="..\:/Kuldeep/@Rafale_Studio_2k-20/App_Studio/@Rafale_Studio_Apps/COMPLETE Projects/MeetOn V1.0.1/app/src/main/res/layout/activity_direct_join.xml" value="0.27445652173913043" />
+        <entry key="..\:/Kuldeep/@Rafale_Studio_2k-20/App_Studio/@Rafale_Studio_Apps/COMPLETE Projects/MeetOn V1.0.1/app/src/main/res/layout/activity_massage_three.xml" value="0.27445652173913043" />
+        <entry key="..\:/Kuldeep/@Rafale_Studio_2k-20/App_Studio/@Rafale_Studio_Apps/COMPLETE Projects/MeetOn V1.0.1/app/src/main/res/layout/activity_profile.xml" value="0.27445652173913043" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

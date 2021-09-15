@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ks_grey_300"
+    android:elevation="15dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".FeedRateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="15dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_btn_FRA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Content_descriptions"
+            android:elevation="25dp"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow_icon"
+            app:tint="@color/ks_indigo_900" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Send Us Some Feedback!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_indigo_900"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/Content_descriptions"
+            android:elevation="25dp"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            app:srcCompat="@drawable/feedback_ui" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/rating_bar_FRA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/Content_descriptions"
+            android:elevation="200dp"
+            android:focusableInTouchMode="true"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <EditText
+            android:id="@+id/feedback_input_FRA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:backgroundTint="@color/ks_transparent_1000"
+            android:gravity="start"
+            android:hint="Please type here..."
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/ks_grey_600"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/send_btn_FRA"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_2"
+            android:elevation="55dp"
+            android:gravity="center"
+            android:text="Send"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ks_grey_300">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="25dp"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:gravity="center"
+            android:text="Love from MeetOn"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_indigo_900"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

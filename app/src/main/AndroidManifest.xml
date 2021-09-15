@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rafale.studio.meeting.meeton">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MeetOn">
+        <activity
+            android:name=".LogOutingScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FastJoinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JoinMeetingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HostMeetingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QRCodeOneActvity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashbordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MassageThreeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MassageTwoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MassageOneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TermConditionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6509185389050587~4040874098" />
+    </application>
+
+</manifest>

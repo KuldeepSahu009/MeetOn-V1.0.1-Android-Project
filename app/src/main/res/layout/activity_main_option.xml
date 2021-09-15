@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_4"
+    android:elevation="15dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".MainOptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:elevation="15dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingRight="30dp"
+            android:text="MeetOn"
+            android:textAlignment="center"
+            android:textColor="@color/ks_indigo_900"
+            android:textSize="35sp"
+            android:transitionName="transition_MA_1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="60dp"
+            android:text="Start meeting now..."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_950"
+            android:textSize="17sp"
+            android:transitionName="transition_MA_2" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ks_transparent_1000"
+        android:elevation="15dp"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/ks_transparent_1000"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:transitionName="transition_MA_3"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ViewFlipper
+                android:id="@+id/flipper_slider_WCAC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
+                android:focusableInTouchMode="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@color/ks_transparent_1000"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/copyright_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/direct_join_btn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_1"
+                android:onClick="DirectJoinBtn"
+                android:text="Join"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/ks_white_1000"
+                app:backgroundTint="@drawable/shape_1" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/ks_transparent_1000" />
+
+            <Button
+                android:id="@+id/host_btn_moa"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_1"
+                android:text="Host"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/ks_white_1000"
+                app:backgroundTint="@drawable/shape_1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/copyright_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/Copyright_Text"
+            android:textAlignment="center"
+            android:textColor="@color/ks_grey_800"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

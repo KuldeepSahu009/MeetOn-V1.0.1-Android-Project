@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "582509222291",
+    "project_id": "developerhut-89552",
+    "storage_bucket": "developerhut-89552.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582509222291:android:f0526a2e255a44f0cab066",
+        "android_client_info": {
+          "package_name": "com.rafale.studio.v1.developerhut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582509222291-oh29mkg09etc7qanio53cuebvokfn9qr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rafale.studio.v1.developerhut",
+            "certificate_hash": "3abcd4fbd50ba3e5f24f275f1655a93bc673aa81"
+          }
+        },
+        {
+          "client_id": "582509222291-8vunbb7l972qpmu4c1nei8o4d8bhb9nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNhKZp7vhnk328_QfWYMDsYj9jlYJoh-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582509222291-8vunbb7l972qpmu4c1nei8o4d8bhb9nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

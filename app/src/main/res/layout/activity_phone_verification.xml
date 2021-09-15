@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_4"
+    android:elevation="15dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context=".PhoneVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ks_transparent_1000"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/ks_transparent_1000"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:elevation="25dp"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Phone\nVerification"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/Content_descriptions"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/phone_icon"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:elevation="30dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="Enter your phone number to verify."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_950"
+            android:textSize="20dp" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp_PVA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true"
+            app:ccp_showPhoneCode="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/OutLineEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:hint="Phone number*"
+            android:transitionName="mainAcTransition2"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:endIconDrawable="@drawable/cancel_icon"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/ks_grey_600"
+            app:hintTextColor="@color/ks_grey_600">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_input_PVA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPhonetic"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/send_btn_PVA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="Send"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/ks_blue_grey_300"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ks_transparent_1000"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/ks_transparent_1000"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:elevation="25dp"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="O-T-P\nVerification"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:contentDescription="@string/Content_descriptions"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/otp_verification_icon"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:elevation="30dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Enter six digit OTP sent to your number."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_950"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/number_show_PVA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="30dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0000000000"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_950"
+            android:textSize="20dp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view_PVA"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/Content_descriptions"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/ks_grey_200"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="45dp"
+            app:itemRadius="5dp"
+            app:itemWidth="45dp"
+            app:lineColor="@color/black" />
+
+        <Button
+            android:id="@+id/submit_btn_PVA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

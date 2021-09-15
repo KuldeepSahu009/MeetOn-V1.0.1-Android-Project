@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/ks_grey_300"
+    android:elevation="15dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ErrorActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/Content_descriptions"
+            android:elevation="25sp"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toTopOf="@+id/retry_btn_ER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/error_ui" />
+
+        <Button
+            android:id="@+id/retry_btn_ER"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/shape_3"
+            android:elevation="35dp"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="Retry"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_300"
+            app:backgroundTint="@color/ks_indigo_900"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

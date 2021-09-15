@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_6"
+    android:elevation="15dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/ks_transparent_1000"
+        android:elevation="200dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_btn_PA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Content_descriptions"
+            android:elevation="20dp"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow_icon"
+            app:tint="@color/white" />
+
+        <com.google.android.material.circularreveal.CircularRevealLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/profile_icon_PA"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/Content_descriptions"
+                android:elevation="0dp"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/male_profile_img" />
+
+        </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:elevation="20dp"
+            android:fitsSystemWindows="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ks_grey_900" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/edit_profile_area_PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ks_transparent_1000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="● Edit Profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/ks_grey_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/Content_descriptions"
+                    android:elevation="20dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/edit_profile_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ks_grey_900" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/qr_code_area_PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ks_transparent_1000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="● QR code"
+                    android:textAlignment="center"
+                    android:textColor="@color/ks_grey_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/Content_descriptions"
+                    android:elevation="20dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/qr_code_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ks_grey_900" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/feedback_area_PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ks_transparent_1000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="● Feedback"
+                    android:textAlignment="center"
+                    android:textColor="@color/ks_grey_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/Content_descriptions"
+                    android:elevation="20dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/rate_us_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ks_grey_900" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/support_area_PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ks_transparent_1000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="● Support"
+                    android:textAlignment="center"
+                    android:textColor="@color/ks_grey_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/Content_descriptions"
+                    android:elevation="20dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/support_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ks_grey_900" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/share_area_PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ks_transparent_1000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="● Share"
+                    android:textAlignment="center"
+                    android:textColor="@color/ks_grey_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/Content_descriptions"
+                    android:elevation="20dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/share_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ks_grey_900" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/ks_transparent_1000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/ks_transparent_1000"
+                    android:elevation="300dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/logout_btn_PA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/ks_transparent_1000"
+                        android:contentDescription="@string/Content_descriptions"
+                        android:drawableEnd="@drawable/log_out_icon"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="LogOut"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/ks_red_900"
+                        android:textSize="18sp"
+                        android:transitionName="transition_DBA_1" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:layout_marginRight="5dp"-->
+                    <!--                        android:gravity="center"-->
+                    <!--                        android:text="LogOut"-->
+                    <!--                        android:textAlignment="center"-->
+                    <!--                        android:textColor="@color/ks_red_300"-->
+                    <!--                        android:textSize="16sp"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="30dp"-->
+                    <!--                        android:layout_height="30dp"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:contentDescription="@string/Content_descriptions"-->
+                    <!--                        android:elevation="20dp"-->
+                    <!--                        android:focusableInTouchMode="true"-->
+                    <!--                        android:src="@drawable/log_out_icon" />-->
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="25dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="80dp"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="MeetOn\nv 1.0.1\nProudly made in India"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_100" />
+
+    </LinearLayout>
+
+</LinearLayout>

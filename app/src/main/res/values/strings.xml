@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MeetOn</string>
+
+    <!--
+    **
+    * Design & Developed by Kuldeep Sahu on 18/07/2021.
+    * E-mail: sahukuldeep912001@gmail.com
+    * http://skywarrior09.gq
+    */
+    -->
+
+    <!--  By Default  -->
+    <string name="Copyright_Text">Copyright © @Rafale_Studio | All right reserved | 2021</string>
+    <string name="Content_descriptions">All Meet On Project Content Descriptions</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="AdMob_APP_ID">ca-app-pub-6509185389050587~4040874098</string>
+    <string name="AdMob_AD_ID">ca-app-pub-6509185389050587/3229537377</string>
+    <string name="Testing_AdMob_AD_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <!--_______________-->
+
+</resources>

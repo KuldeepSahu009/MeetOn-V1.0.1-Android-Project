@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="20dp"
+    android:background="@color/ks_white_1000"
+    android:elevation="50dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/Content_descriptions"
+        android:elevation="20dp"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/preloader_1" />
+
+</LinearLayout>

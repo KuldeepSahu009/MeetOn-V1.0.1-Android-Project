@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    **
+    * Design & Developed by Kuldeep Sahu on 18/07/2021.
+    * E-mail: sahukuldeep912001@gmail.com
+    * http://skywarrior09.gq
+    */
+    -->
+
+    <translate
+        android:fromXDelta="0%"
+        android:fromYDelta="-50%"
+        android:duration="2000" />
+
+    <alpha
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0"
+        android:duration="1500" />
+
+</set>

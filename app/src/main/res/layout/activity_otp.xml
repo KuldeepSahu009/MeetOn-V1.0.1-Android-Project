@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_4"
+    android:elevation="15dp"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".OtpActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/ks_transparent_1000"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn_OA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Content_descriptions"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:src="@drawable/back_arrow_icon"
+            app:tint="@color/ks_indigo_900" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/Content_descriptions"
+            android:focusableInTouchMode="true"
+            app:srcCompat="@drawable/otp_ui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/bungee"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="O-T-P"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/antic"
+            android:gravity="center"
+            android:text="Enter Six digit OTP sent to your Registered\nmobile number "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_950"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mobile_number_show_OA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0000000000"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/ks_grey_950"
+            android:textSize="18sp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view_OA"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/Content_descriptions"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/ks_grey_200"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="45dp"
+            app:itemRadius="5dp"
+            app:itemWidth="45dp"
+            app:lineColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/arrow_btn_OA"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_3"
+            android:fitsSystemWindows="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/right_arrow_icon"
+            app:tint="@color/white" />
+
+        <Button
+            android:id="@+id/resend_btn_OA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/ks_transparent_1000"
+            android:gravity="center"
+            android:text="Resend OTP"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/ks_transparent_1000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/copyright_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/Copyright_Text"
+            android:textAlignment="center"
+            android:textColor="@color/ks_grey_800"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
